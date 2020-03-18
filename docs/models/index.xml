@@ -1,0 +1,164 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DPsim – Models</title>
+    <link>https://dpsim-simulator.github.io/docs/models/</link>
+    <description>Recent content in Models on DPsim</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://dpsim-simulator.github.io/docs/models/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Basic Elements</title>
+      <link>https://dpsim-simulator.github.io/docs/models/basic-elements/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim-simulator.github.io/docs/models/basic-elements/</guid>
+      <description>
+        
+        
+        
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Branches</title>
+      <link>https://dpsim-simulator.github.io/docs/models/branches/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim-simulator.github.io/docs/models/branches/</guid>
+      <description>
+        
+        
+        &lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script id=&#34;MathJax-script&#34; async src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+&lt;h2 id=&#34;rx-line&#34;&gt;RX-Line&lt;/h2&gt;
+&lt;h2 id=&#34;pi-line&#34;&gt;PI-Line&lt;/h2&gt;
+&lt;h2 id=&#34;transformer&#34;&gt;Transformer&lt;/h2&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Induction Machine</title>
+      <link>https://dpsim-simulator.github.io/docs/models/induction-machine/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim-simulator.github.io/docs/models/induction-machine/</guid>
+      <description>
+        
+        
+        
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Synchronous Generator</title>
+      <link>https://dpsim-simulator.github.io/docs/models/synchronous-generator/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim-simulator.github.io/docs/models/synchronous-generator/</guid>
+      <description>
+        
+        
+        &lt;script src=&#34;https://polyfill.io/v3/polyfill.min.js?features=es6&#34;&gt;&lt;/script&gt;
+&lt;script id=&#34;MathJax-script&#34; async src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js&#34;&gt;&lt;/script&gt;
+&lt;h2 id=&#34;basic-equations&#34;&gt;Basic Equations&lt;/h2&gt;
+&lt;p&gt;The equations of the stator and rotor voltages are&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+    \mathbf{v}_{abcs} &amp;amp;= \mathbf{R}_s \mathbf{i}_{abcs} + \frac{d}{dt} \boldsymbol{\lambda}_{abcs} \\
+    \mathbf{v}_{dqr} &amp;amp;= \mathbf{R}_r \mathbf{i}_{dqr} + \frac{d}{dt} \boldsymbol{\lambda}_{dqr}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \mathbf{v}_{abcs} &amp;amp;=
+  \begin{pmatrix}
+    v_{as} &amp;amp; v_{bs} &amp;amp; v_{cs}
+  \end{pmatrix}^T \\
+  %
+  \mathbf{v}_{dqr} &amp;amp;=
+  \begin{pmatrix}
+    v_{fd} &amp;amp; v_{kd} &amp;amp; v_{kq1} &amp;amp; v_{kq2}
+  \end{pmatrix}^T \\
+  %
+  \mathbf{i}_{abcs} &amp;amp;=
+  \begin{pmatrix}
+    i_{as} &amp;amp; i_{bs} &amp;amp; i_{cs}
+  \end{pmatrix}^T \\
+  %
+  \mathbf{i}_{dqr} &amp;amp;=
+  \begin{pmatrix}
+    i_{fd} &amp;amp; i_{kd} &amp;amp; i_{kq1} &amp;amp; i_{kq2}
+  \end{pmatrix}^T \\
+  %
+  \boldsymbol{\lambda}_{abcs} &amp;amp;=
+  \begin{pmatrix}
+    \lambda_{as} &amp;amp; \lambda_{bs} &amp;amp; \lambda_{cs}
+  \end{pmatrix}^T \\
+  %
+  \boldsymbol{\lambda}_{dqr} &amp;amp;=
+  \begin{pmatrix}
+    \lambda_{fd} &amp;amp; \lambda_{kd} &amp;amp; \lambda_{kq1} &amp;amp; \lambda_{kq2}
+  \end{pmatrix}^T \\
+  %
+  \mathbf{R}_s &amp;amp;= diag
+  \begin{bmatrix}
+    R_s &amp;amp; R_s &amp;amp; R_s
+  \end{bmatrix} \\
+  %
+  \mathbf{R}_r &amp;amp;= diag
+  \begin{bmatrix}
+    R_{fd} &amp;amp; R_{kd} &amp;amp; R_{kq1} &amp;amp; R_{kq2}
+  \end{bmatrix}
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The flux linkage equations are defined as&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{equation}
+    \begin{bmatrix}
+        \boldsymbol{\lambda}_{abcs} \\
+        \boldsymbol{\lambda}_{dqr}
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        \mathbf{L}_s &amp;amp; \mathbf{L}_{rs} \\
+        {(\mathbf{L}_{rs})}^{T} &amp;amp; \mathbf{L}_r
+    \end{bmatrix}
+    \begin{bmatrix}
+        \mathbf{i}_{abcs} \\
+        \mathbf{i}_{dqr}
+  \end{bmatrix}
+\end{equation}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The inductance matrices are varying with the rotor position &lt;span class=&#34;math inline&#34;&gt;\(\theta_r\)&lt;/span&gt; which varies with time.&lt;/p&gt;
+&lt;p&gt;The mechanical equations are:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \frac{d\theta_r}{dt} &amp;amp;= \omega_r \\
+  \frac{d\omega_r}{dt} &amp;amp;= \frac{P}{2J} (T_e-T_m)
+\end{align}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(\theta_r\)&lt;/span&gt; is the rotor position, &lt;span class=&#34;math inline&#34;&gt;\(\omega_r\)&lt;/span&gt; is the angular electrical speed, &lt;span class=&#34;math inline&#34;&gt;\(P\)&lt;/span&gt; is the number of poles, &lt;span class=&#34;math inline&#34;&gt;\(J\)&lt;/span&gt; is the moment of inertia, &lt;span class=&#34;math inline&#34;&gt;\(T_m\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(T_e\)&lt;/span&gt; are the mechanical and electrical torque, respectively. Motor convention is used for all models.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: VS-Inverter</title>
+      <link>https://dpsim-simulator.github.io/docs/models/power-electronics/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim-simulator.github.io/docs/models/power-electronics/</guid>
+      <description>
+        
+        
+        
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

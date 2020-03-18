@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/overview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/getting-started/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/concepts/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/tasks/add-model/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/tasks/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/examples/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/tutorials/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/reference/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/contribution-guidelines/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/blog/releases/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/blog/news/</loc>
+    <lastmod>2020-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/basic-elements/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/branches/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/concepts/dyn-phasors/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/induction-machine/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/concepts/nodal-analysis/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/concepts/powerflow/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/synchronous-generator/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/models/power-electronics/</loc>
+    <lastmod>2020-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/blog/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/blog/2020/03/17/open-source-release/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/blog/2020/03/16/new-documentation/</loc>
+    <lastmod>2020-03-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/getting-started/build/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/getting-started/development/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/getting-started/install/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/docs/getting-started/real-time/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/index.json</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/community/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dpsim-simulator.github.io/search/</loc>
+  </url>
+  
+</urlset>
