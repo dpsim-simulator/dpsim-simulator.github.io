@@ -1,12 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DPsim – Documentation</title>
-    <link>https://dpsim-simulator.github.io/docs/</link>
+    <link>https://dpsim.fein-aachen.org/docs/</link>
     <description>Recent content in Documentation on DPsim</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     
-	  <atom:link href="https://dpsim-simulator.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://dpsim.fein-aachen.org/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +15,10 @@
     
     <item>
       <title>Docs: Add New Model</title>
-      <link>https://dpsim-simulator.github.io/docs/tasks/add-model/</link>
+      <link>https://dpsim.fein-aachen.org/docs/tasks/add-model/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/tasks/add-model/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/tasks/add-model/</guid>
       <description>
         
         
@@ -78,10 +77,10 @@ The general structure looks as follows.&lt;/p&gt;
     
     <item>
       <title>Docs: Examples</title>
-      <link>https://dpsim-simulator.github.io/docs/examples/</link>
+      <link>https://dpsim.fein-aachen.org/docs/examples/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/examples/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/examples/</guid>
       <description>
         
         
@@ -92,10 +91,10 @@ The general structure looks as follows.&lt;/p&gt;
     
     <item>
       <title>Docs: Tutorials</title>
-      <link>https://dpsim-simulator.github.io/docs/tutorials/</link>
+      <link>https://dpsim.fein-aachen.org/docs/tutorials/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/tutorials/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/tutorials/</guid>
       <description>
         
         
@@ -107,15 +106,15 @@ These will be updated with more explanations.&lt;/p&gt;
     
     <item>
       <title>Docs: Reference</title>
-      <link>https://dpsim-simulator.github.io/docs/reference/</link>
+      <link>https://dpsim.fein-aachen.org/docs/reference/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/reference/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/reference/</guid>
       <description>
         
         
-        &lt;p&gt;The &lt;a href=&#34;https://acs.pages.rwth-aachen.de/public/simulation/dpsim/dpsim/about.html&#34;&gt;Sphinx documentation&lt;/a&gt; has examples, build / installation instructions and covers the Python API.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&#34;https://acs.pages.rwth-aachen.de/public/simulation/dpsim/dpsim/cxx/index.html&#34;&gt;Doxygen documentation&lt;/a&gt; only includes automatically generated content using Doxygen. 
+        &lt;p&gt;The &lt;a href=&#34;https://acs.pages.rwth-aachen.de/public/simulation/dpsim/dpsim/sphinx/about.html&#34;&gt;Sphinx documentation&lt;/a&gt; describes the Python API.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://acs.pages.rwth-aachen.de/public/simulation/dpsim/dpsim/doxygen/index.html&#34;&gt;Doxygen documentation&lt;/a&gt; is automatically generated from the C++ code using Doxygen.
 It is helpful to understand the general structure of the C++ DPsim core components.&lt;/p&gt;
 
       </description>
@@ -123,10 +122,10 @@ It is helpful to understand the general structure of the C++ DPsim core componen
     
     <item>
       <title>Docs: Contribution Guidelines</title>
-      <link>https://dpsim-simulator.github.io/docs/contribution-guidelines/</link>
+      <link>https://dpsim.fein-aachen.org/docs/contribution-guidelines/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/contribution-guidelines/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/contribution-guidelines/</guid>
       <description>
         
         
@@ -137,11 +136,49 @@ Please get in touch with us via mail or slack if you would like to contribute.&l
     </item>
     
     <item>
+      <title>Docs: Create New Simulation</title>
+      <link>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dpsim.fein-aachen.org/docs/tasks/create-simulation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Here, we will show the implementation of a new simulation scenario defined in C++, which is using DPsim as a library.&lt;/p&gt;
+&lt;h2 id=&#34;directory-structure&#34;&gt;Directory Structure&lt;/h2&gt;
+&lt;p&gt;In the end, your directory structure should look like as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;my-project
+  |- CMakeLists.txt
+  |- source
+      |- my-scenario.cpp
+  |- dpsim (as submodule)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;cmake-file&#34;&gt;CMake File&lt;/h2&gt;
+&lt;p&gt;Your CMakeLists could look like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cmake_minimum_required(VERSION 3.5)
+project(my-project CXX)
+
+add_subdirectory(dpsim)
+
+add_executable(my-scenario source/my-scenario.cpp)
+  target_link_libraries(my-scenario dpsim)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;build-the-project&#34;&gt;Build the Project&lt;/h2&gt;
+&lt;p&gt;The build process is similar to the one of DPsim:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ cd my-project
+$ mkdir build &amp;amp;&amp;amp; cd build
+$ cmake ..
+$ make my-scenario&lt;/code&gt;&lt;/pre&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Basic Elements</title>
-      <link>https://dpsim-simulator.github.io/docs/models/basic-elements/</link>
+      <link>https://dpsim.fein-aachen.org/docs/models/basic-elements/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/models/basic-elements/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/models/basic-elements/</guid>
       <description>
         
         
@@ -152,10 +189,10 @@ Please get in touch with us via mail or slack if you would like to contribute.&l
     
     <item>
       <title>Docs: Branches</title>
-      <link>https://dpsim-simulator.github.io/docs/models/branches/</link>
+      <link>https://dpsim.fein-aachen.org/docs/models/branches/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/models/branches/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/models/branches/</guid>
       <description>
         
         
@@ -170,10 +207,10 @@ Please get in touch with us via mail or slack if you would like to contribute.&l
     
     <item>
       <title>Docs: Dynamic Phasors</title>
-      <link>https://dpsim-simulator.github.io/docs/concepts/dyn-phasors/</link>
+      <link>https://dpsim.fein-aachen.org/docs/concepts/dyn-phasors/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/concepts/dyn-phasors/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/concepts/dyn-phasors/</guid>
       <description>
         
         
@@ -195,10 +232,10 @@ Futhermore, higher frequencies, for example, generated by power electronics can 
     
     <item>
       <title>Docs: Induction Machine</title>
-      <link>https://dpsim-simulator.github.io/docs/models/induction-machine/</link>
+      <link>https://dpsim.fein-aachen.org/docs/models/induction-machine/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/models/induction-machine/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/models/induction-machine/</guid>
       <description>
         
         
@@ -209,10 +246,10 @@ Futhermore, higher frequencies, for example, generated by power electronics can 
     
     <item>
       <title>Docs: Nodal Analysis</title>
-      <link>https://dpsim-simulator.github.io/docs/concepts/nodal-analysis/</link>
+      <link>https://dpsim.fein-aachen.org/docs/concepts/nodal-analysis/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/concepts/nodal-analysis/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/concepts/nodal-analysis/</guid>
       <description>
         
         
@@ -238,10 +275,10 @@ Futhermore, higher frequencies, for example, generated by power electronics can 
     
     <item>
       <title>Docs: Powerflow</title>
-      <link>https://dpsim-simulator.github.io/docs/concepts/powerflow/</link>
+      <link>https://dpsim.fein-aachen.org/docs/concepts/powerflow/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/concepts/powerflow/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/concepts/powerflow/</guid>
       <description>
         
         
@@ -399,10 +436,10 @@ MathJax = {
     
     <item>
       <title>Docs: Synchronous Generator</title>
-      <link>https://dpsim-simulator.github.io/docs/models/synchronous-generator/</link>
+      <link>https://dpsim.fein-aachen.org/docs/models/synchronous-generator/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/models/synchronous-generator/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/models/synchronous-generator/</guid>
       <description>
         
         
@@ -485,10 +522,10 @@ MathJax = {
     
     <item>
       <title>Docs: VS-Inverter</title>
-      <link>https://dpsim-simulator.github.io/docs/models/power-electronics/</link>
+      <link>https://dpsim.fein-aachen.org/docs/models/power-electronics/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/models/power-electronics/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/models/power-electronics/</guid>
       <description>
         
         
@@ -499,10 +536,10 @@ MathJax = {
     
     <item>
       <title>Docs: Build</title>
-      <link>https://dpsim-simulator.github.io/docs/getting-started/build/</link>
+      <link>https://dpsim.fein-aachen.org/docs/getting-started/build/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/getting-started/build/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/getting-started/build/</guid>
       <description>
         
         
@@ -632,10 +669,10 @@ $ make docs_cxx
     
     <item>
       <title>Docs: Development</title>
-      <link>https://dpsim-simulator.github.io/docs/getting-started/development/</link>
+      <link>https://dpsim.fein-aachen.org/docs/getting-started/development/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/getting-started/development/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/getting-started/development/</guid>
       <description>
         
         
@@ -673,10 +710,10 @@ $ make docs_cxx
     
     <item>
       <title>Docs: Install</title>
-      <link>https://dpsim-simulator.github.io/docs/getting-started/install/</link>
+      <link>https://dpsim.fein-aachen.org/docs/getting-started/install/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/getting-started/install/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/getting-started/install/</guid>
       <description>
         
         
@@ -716,10 +753,10 @@ In case it is not activated, run:&lt;/p&gt;
     
     <item>
       <title>Docs: Real-Time</title>
-      <link>https://dpsim-simulator.github.io/docs/getting-started/real-time/</link>
+      <link>https://dpsim.fein-aachen.org/docs/getting-started/real-time/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://dpsim-simulator.github.io/docs/getting-started/real-time/</guid>
+      <guid>https://dpsim.fein-aachen.org/docs/getting-started/real-time/</guid>
       <description>
         
         

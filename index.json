@@ -23,11 +23,11 @@
 <title>DPsim</title><meta property="og:title" content="" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dpsim-simulator.github.io/index.json" />
-<meta property="og:site_name" content="DPsim" />
+<meta property="og:url" content="https://dpsim.fein-aachen.org/index.json" />
+<meta property="article:modified_time" content="2020-03-18T22:12:02+01:00" /><meta property="og:site_name" content="DPsim" />
 <meta itemprop="name" content="">
 <meta itemprop="description" content="">
-
+<meta itemprop="dateModified" content="2020-03-18T22:12:02&#43;01:00" />
 <meta itemprop="wordCount" content="0">
 
 
@@ -192,7 +192,7 @@
 
 
 
-<script src="/js/main.min.c63634daa7aee57f6454b1a04fbd05b8f5ad57561e38fdd4b6b4a0fed21de178.js" integrity="sha256-xjY02qeu5X9kVLGgT70FuPWtV1YeOP3UtrSg/tId4Xg=" crossorigin="anonymous"></script>
+<script src="/js/main.min.9727ddf6d3e2a36de5762932ccccea1f3d386238d03b97a8b5d1007aa41e7ce5.js" integrity="sha256-lyfd9tPio23ldikyzMzqHz04YjjQO5eotdEAeqQefOU=" crossorigin="anonymous"></script>
 
 
 
