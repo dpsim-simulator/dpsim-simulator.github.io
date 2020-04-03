@@ -45,6 +45,7 @@ A DAE solver is currently under development.
 Its main purpose will be offline simulation, for example, to provide reference results where simulation runtime and real-time execution are not relevant.&lt;/p&gt;
 &lt;p&gt;The component models depend mostly on the Eigen library.
 Even if components are used in combination with Sundials ODE / DAE solvers, we try to keep the specific functions required by these solvers independent of the Sundials package.&lt;/p&gt;
+&lt;h2 id=&#34;class-hierarchy&#34;&gt;Class Hierarchy&lt;/h2&gt;
 &lt;p&gt;The &lt;code&gt;Simulation&lt;/code&gt; class holds references to instances of &lt;code&gt;Interface&lt;/code&gt;, &lt;code&gt;Solver&lt;/code&gt;, &lt;code&gt;Logger&lt;/code&gt; and &lt;code&gt;SystemTopology&lt;/code&gt;.
 For a simulation scenario, the minimum description would include a &lt;code&gt;SystemTopology&lt;/code&gt; and a solver type.
 The &lt;code&gt;Solver&lt;/code&gt; instance is then created by the &lt;code&gt;Simulation&lt;/code&gt;.&lt;/p&gt;

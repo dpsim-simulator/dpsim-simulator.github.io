@@ -30,7 +30,7 @@
 <meta itemprop="description" content="Modules and Dependencies The figure below shows the main components of the DPsim library and their dependencies on other software projects. All functionality is implemented in the C&#43;&#43; core, which can be used standalone or together with the Python interface. The Python interface is a thin wrapper of the C&#43;&#43; core. Jupyter notebooks can either use the DPsim Python interface to run simulations or call executables implemented in C&#43;&#43;. The data analysis and plotting is always done in Python using common libraries like Matplotlib.">
 <meta itemprop="datePublished" content="2020-03-25T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-04-03T17:38:29&#43;02:00" />
-<meta itemprop="wordCount" content="638">
+<meta itemprop="wordCount" content="640">
 
 
 
@@ -489,6 +489,7 @@ A DAE solver is currently under development.
 Its main purpose will be offline simulation, for example, to provide reference results where simulation runtime and real-time execution are not relevant.</p>
 <p>The component models depend mostly on the Eigen library.
 Even if components are used in combination with Sundials ODE / DAE solvers, we try to keep the specific functions required by these solvers independent of the Sundials package.</p>
+<h2 id="class-hierarchy">Class Hierarchy</h2>
 <p>The <code>Simulation</code> class holds references to instances of <code>Interface</code>, <code>Solver</code>, <code>Logger</code> and <code>SystemTopology</code>.
 For a simulation scenario, the minimum description would include a <code>SystemTopology</code> and a solver type.
 The <code>Solver</code> instance is then created by the <code>Simulation</code>.</p>
