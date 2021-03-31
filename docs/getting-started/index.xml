@@ -34,7 +34,7 @@ $ cmake --build . --target dpsim_python
 &lt;/code>&lt;/pre>
 &lt;p>If you would like to use the Python package, it has to be added to the path&lt;/p>
 &lt;pre>&lt;code>$ cd /dpsim/build
-$ export PYTHONPATH=$(pwd)/Source/Python:$(pwd)/../Source/Python
+$ export PYTHONPATH=$(pwd):$(pwd)/Source/Python:$(pwd)/../Source/Python
 &lt;/code>&lt;/pre>
 &lt;p>To run jupyter lab&lt;/p>
 &lt;pre>&lt;code>$ cd /dpsim
