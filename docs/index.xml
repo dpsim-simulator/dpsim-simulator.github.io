@@ -630,10 +630,10 @@ T_e &amp;amp;= \langle \lambda_{qs} \rangle_0 \langle i_{ds} \rangle_0 - \langle
 &lt;h2 id="transient-stability-model">Transient Stability Model&lt;/h2></description></item><item><title>Docs: VS-Inverter</title><link>https://dpsim.fein-aachen.org/docs/models/power-electronics/</link><pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate><guid>https://dpsim.fein-aachen.org/docs/models/power-electronics/</guid><description/></item><item><title>Docs: Build</title><link>https://dpsim.fein-aachen.org/docs/getting-started/build/</link><pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate><guid>https://dpsim.fein-aachen.org/docs/getting-started/build/</guid><description>
 &lt;h2 id="docker-based">Docker based&lt;/h2>
 &lt;p>Clone the repository&lt;/p>
-&lt;pre>&lt;code>$ git clone --recurse-submodules git@git.rwth-aachen.de:acs/public/simulation/dpsim/dpsim.git
+&lt;pre>&lt;code>$ git clone git@github.com:sogno-platform/dpsim.git
 &lt;/code>&lt;/pre>
 &lt;p>or using https if you do not have an account&lt;/p>
-&lt;pre>&lt;code>$ git clone --recurse-submodules https://git.rwth-aachen.de:acs/public/simulation/dpsim/dpsim
+&lt;pre>&lt;code>$ git clone https://github.com/sogno-platform/dpsim.git
 &lt;/code>&lt;/pre>
 &lt;p>In the repository, there is a Docker file with all required dependencies&lt;/p>
 &lt;pre>&lt;code>$ cd dpsim
